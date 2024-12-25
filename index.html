@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aixa ASMR</title>
+  <style>
+    /* Estilo global */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f7e8e3, #e7f0f7);
+      color: #444;
+      overflow-x: hidden;
+    }
+
+    /* Encabezado */
+    header {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to bottom, #ffe6e9, #e9f3ff);
+      border-bottom: 4px solid #f8cccc;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      font-size: 4em;
+      margin: 0;
+      color: #ff89a6;
+      text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header p {
+      font-size: 1.5em;
+      color: #555;
+      margin: 15px 0 0;
+    }
+
+    /* Logo */
+    .logo {
+      margin-top: 20px;
+    }
+
+    .logo img {
+      width: 120px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    /* Partículas flotantes */
+    .particles {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .particle {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: rgba(255, 182, 193, 0.8);
+      border-radius: 50%;
+      animation: float 6s infinite ease-in-out;
+    }
+
+    .particle:nth-child(2) {
+      width: 15px;
+      height: 15px;
+      background: rgba(173, 216, 230, 0.8);
+      animation-duration: 8s;
+    }
+
+    .particle:nth-child(3) {
+      width: 8px;
+      height: 8px;
+      background: rgba(255, 240, 245, 0.8);
+      animation-duration: 4s;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.8;
+      }
+      50% {
+        transform: translateY(-50px) translateX(20px);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(0) translateX(40px);
+        opacity: 0.8;
+      }
+    }
+
+    /* Sección Acerca de */
+    .about {
+      text-align: center;
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 40px 20px;
+      background: rgba(255, 250, 250, 0.95);
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .about p {
+      font-size: 1.4em;
+      color: #666;
+      line-height: 1.8;
+    }
+
+    /* Botones */
+    .links {
+      text-align: center;
+      margin: 40px auto;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 40px;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      background: linear-gradient(to bottom, #ffb4ba, #ff89a6);
+      border-radius: 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Galería */
+    .gallery {
+      text-align: center;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .gallery h2 {
+      font-size: 2.8em;
+      color: #ff89a6;
+      margin-bottom: 30px;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 25px;
+      padding: 0 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      background: #ffe6e9;
+      border-top: 4px solid #f8cccc;
+      font-size: 1.2em;
+      color: #555;
+    }
+
+    /* Estilo para el banner */
+    .banner img {
+      width: 100%;
+      height: 310px; /* Altura ajustada */
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Banner -->
+  <div class="banner">
+    <a href="https://ibb.co/bvpH29p">
+      <img src="https://i.ibb.co/JpXxyJX/channels4-banner.jpg" alt="channels4-banner">
+    </a>
+  </div>
+
+  <!-- Encabezado -->
+  <header>
+    <h1>Aixa ASMR</h1>
+    <p>Relájate y disfruta con Minecraft</p>
+    <!-- Logo -->
+    <div class="logo">
+      <a href="https://ibb.co/Ybhxnw1">
+        <img src="https://i.ibb.co/1bTkyjP/channels4-profile-1-1.jpg" alt="Logo de Aixa ASMR">
+      </a>
+    </div>
+    <div class="particles">
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+      <div class="particle"></div>
+    </div>
+  </header>
+
+  <!-- Sección Acerca de -->
+  <section class="about">
+    <p>Bienvenidos a Aixa ASMR. Aquí podrás relajarte mientras exploras el universo de Minecraft combinado con sonidos y ambientes relajantes. Perfecto para encontrar paz en tu día.</p>
+  </section>
+
+  <!-- Enlaces -->
+  <section class="links">
+    <a href="https://streamlabs.com/aixaasmr/tip" class="button" target="_blank">Apóyame</a>
+    <a href="https://www.instagram.com/aixa.asmr?igsh=NnltcGs3bHltODM=" class="button" target="_blank">Instagram</a>
+    <a href="https://www.tiktok.com/@aixa.asmr" class="button" target="_blank">TikTok</a>
+    <a href="https://www.whatsapp.com/channel/0029VaGQjS20LKZDb8pQpV07" class="button" target="_blank">WhatsApp</a>
+    <a href="https://discord.com/invite/nuMPSQ7kjU" class="button" target="_blank">Discord</a>
+  </section>
+
+</body>
+</html>
